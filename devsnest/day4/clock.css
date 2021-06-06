@@ -1,7 +1,7 @@
 :root {
-    --start-sec: 30;
-    --start-min: 6;
-    --start-hour: 4;
+    --start-sec: 0;
+    --start-min: 0;
+    --start-hour: 9;
 }
 
 * {
@@ -30,7 +30,7 @@
 }
 
 .hours {
-    height: 150px;
+    height: 185px;
     background-color: blueviolet;
     transform-origin: bottom;
     animation: rotateHour calc(12*60*60s) steps(60) infinite;
@@ -54,15 +54,16 @@
 
 @keyframes rotateMin {
     from {
-        transform: rotate(calc(var(--start-min) * 1deg))
+        transform: rotate(calc(var(--start-min) * 6deg))
     }
     to {
-        transform: rotate(calc(var(--start-min) * 1deg + 360deg))
+        transform: rotate(calc(var(--start-min) * 6deg + 360deg))
     }
 }
 
 .sec {
     height: 100px;
+
     background-color: #e9ca30;
     transform-origin: bottom;
     animation: rotateSec 60s steps(60) infinite;
@@ -76,4 +77,85 @@
     to {
         transform: rotate(calc(var(--start-sec) * 1deg + 360deg));
     }
+}
+
+
+.numbers{
+    position: absolute;
+    left: 50%;
+    font-size: 2rem;
+}
+
+.num:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: -15px;
+}
+
+.num:nth-child(2){
+    /*transform: rotate(-30deg);*/
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
+
+.num:nth-child(3){
+    /*transform: rotate(-30deg);*/
+    position: absolute;
+    top: 80px;
+    left: 140px;
+}
+
+.num:nth-child(4){
+    position: absolute;
+    top: 165px;
+    left: 165px;
+}
+
+.num:nth-child(5){
+    position: absolute;
+    top: 250px;
+    left: 140px;
+}
+
+.num:nth-child(6){
+    position: absolute;
+    top: 310px;
+    left: 80px;
+}
+
+.num:nth-child(7){
+    position: absolute;
+    top: 335px;
+    left: -5px;
+}
+
+.num:nth-child(8){
+    position: absolute;
+    top: 315px;
+    left: -90px;
+}
+
+.num:nth-child(9){
+    position: absolute;
+    top: 255px;
+    left: -155px;
+}
+
+.num:nth-child(10){
+    position: absolute;
+    top: 165px;
+    left: -180px;
+}
+
+.num:nth-child(11){
+    position: absolute;
+    top: 80px;
+    left: -160px;
+}
+
+.num:nth-child(12){
+    position: absolute;
+    top: 20px;
+    left: -95px;
 }
