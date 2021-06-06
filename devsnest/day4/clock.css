@@ -1,6 +1,6 @@
 :root {
     --start-sec: 0;
-    --start-min: 0;
+    --start-min: 30;
     --start-hour: 9;
     --clock-border-color:#ed3b53;
     --sec-hand-color:#ed3b53;
@@ -15,7 +15,7 @@
     box-sizing: border-box;
 }
 
-.lines {
+.clock {
     position: absolute;
     width: 450px;
     height: 450px;
@@ -24,6 +24,7 @@
     border: 40px solid var(--clock-border-color);
     top: 20vh;
     left: 20vh;
+    box-shadow: rgba(174, 71, 78, 0.17) 30px 40px;
 }
 
 .line {
