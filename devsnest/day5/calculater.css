@@ -9,6 +9,7 @@
 .main{
     position: absolute;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     top: 100px;
@@ -18,7 +19,7 @@
     padding: 5px;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 3px #c6a0d6;
-    flex-direction: column;
+
 }
 
 #input {
