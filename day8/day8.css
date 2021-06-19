@@ -26,8 +26,8 @@
     cursor: pointer;
 }
 .pixel label:hover {
-    background: #EC5142;
-    border-color: #040404;
+    background: #f09a94;
+    border-color: #ee9b9b;
 }
 .pixel input:checked ~ label {
     background: #ffffff;
