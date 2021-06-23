@@ -1,0 +1,35 @@
+.frame{
+    display: flex;
+    position: absolute;
+    width: 400px;
+    flex-wrap: wrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.pixel{
+    width: 20px;
+    height: 20px;
+    background: #E24E3F;
+}
+.pixel input{
+    display: none;
+}
+.pixel label {
+    box-sizing: border-box;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ee3b3b;
+    cursor: pointer;
+}
+.pixel label:hover {
+    background: #f09a94;
+    border-color: #ee9b9b;
+}
+.pixel input:checked ~ label {
+    background: #ffffff;
+    border-color: #ffffff;
+}
