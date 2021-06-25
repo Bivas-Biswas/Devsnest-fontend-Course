@@ -1,0 +1,139 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+    --button: #B06DF3;
+    --font-color: #555555;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    list-style-type: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    margin: 10px 0;
+
+}
+
+li p{
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    width: 90%;
+}
+
+button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    opacity: 0.5;
+}
+button:hover{
+    opacity: 1;
+    transition: all 0.07s;
+}
+
+.contanier{
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0,.15);
+    padding: 20px 25px;
+    width: 500px;
+    margin: 50px auto;
+}
+
+header{
+    margin: 10px 10px 20px 10px;
+    color: var(--font-color);
+    font-size: 1.8rem;
+}
+
+.inputField{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    overflow-wrap: break-word;
+
+}
+
+.inputField input {
+    border: none;
+    outline: none;
+    margin:  10px;
+    width: 100%;
+    font-size: 1.5rem;
+    box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+input:focus{
+    outline: 2px solid var(--button);
+}
+
+input::placeholder{
+    padding: 0 10px;
+}
+
+.placeholder::placeholder{
+    color: red;
+}
+
+.inputField button {
+    display: flex;
+    margin: 5px 10px;
+    transform: scale(0.9);
+    align-items: center;
+}
+
+.todoList li{
+    display: flex;
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    color: var(--font-color);
+}
+
+.todoList button{
+    opacity: 0;
+}
+
+li:hover button{
+    opacity: 1;
+    transition: all .07s ease-in-out;
+}
+
+.footer{
+    padding: 20px 0;
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--font-color);
+}
+
+.footer button{
+    background-color: var(--button);
+    padding: 10px;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.clear_all_warning{
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+    color: #8764dc;
+}
