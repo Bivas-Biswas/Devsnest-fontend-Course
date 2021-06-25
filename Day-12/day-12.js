@@ -6,13 +6,13 @@ const delete_all = document.querySelector('#clearAll')
 const peningTasks = document.querySelector('#peningTasks')
 const todosfromLoalStorage = JSON.parse(localStorage.getItem('mytodos'))
 
-if(todosfromLoalStorage){
+if (todosfromLoalStorage) {
     mytodos = todosfromLoalStorage
     render()
 }
 
-add_btn.addEventListener('click', function (){
-    if(inputEl.value) {
+add_btn.addEventListener('click', function () {
+    if (inputEl.value) {
         mytodos.push(inputEl.value)
         inputEl.value = ''
         localStorage.setItem('mytodos', JSON.stringify(mytodos))
@@ -20,43 +20,48 @@ add_btn.addEventListener('click', function (){
         inputEl.placeholder = 'Add your new todo'
         inputEl.classList.remove('placeholder')
         render()
-    }
-    else{
+    } else {
         inputEl.placeholder = 'please, add a todo !!'
         inputEl.classList.add('placeholder')
     }
 })
 
-delete_all.addEventListener('click', function (){
-    if(mytodos.length !== 0) {
+delete_all.addEventListener('click', function () {
         localStorage.removeItem('mytodos')
         mytodos = []
-        render()
-    }
-    else{
-        ulEl.innerHTML = `
-        <p class="clear_all_warning"> No Todo Remaining, Enjoy 😎</p>
-        `
-    }
+        ulEl.innerHTML = `<p class="clear_all_warning"> No Todo Remaining, Enjoy 😎</p>`
+        peningTasks.textContent = `${mytodos.length}`
 })
 
-function deleteTask(index){
+function deleteTask(index) {
     mytodos.splice(index, 1)
     localStorage.setItem('mytodos', JSON.stringify(mytodos))
-    render()
+    if (mytodos.length === 0) {
+        ulEl.innerHTML = `<p class="clear_all_warning"> No Todo Remaining, Enjoy 😎</p>`
+        peningTasks.textContent = `${mytodos.length}`
+    }
+    else{
+        render()
+    }
 }
 
-function render(todos=mytodos){
+function render(todos = mytodos) {
     let todoItems = ''
-    todos.forEach((todo, index)=>{
-        todoItems +=`
-            <li><p>${index+1}. ${todo}</p><button onclick="deleteTask(${index})">
+    if (mytodos.length === 0) {
+        ulEl.innerHTML = `
+        <p class="clear_all_warning"> No Todo Added</p>
+        `
+    } else {
+        todos.forEach((todo, index) => {
+            todoItems += `
+            <li><p>${index + 1}. ${todo}</p><button onclick="deleteTask(${index})">
                 <img src="./img/delete_icon.svg" alt="">
                 </button>
             </li>`
-    })
-    ulEl.innerHTML = todoItems
-    peningTasks.textContent = `${todos.length}`
+        })
+        ulEl.innerHTML = todoItems
+        peningTasks.textContent = `${todos.length}`
+    }
 }
 
 
