@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  box-shadow: 3px 5px 6px -2px #000, -6px -7px 6px -2px #ecdede;
+  width: 320px;
+}
+
+.card, .card-text {
+  padding: 5px;
+}
+
+.card-pic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=memeCard.css.map */
