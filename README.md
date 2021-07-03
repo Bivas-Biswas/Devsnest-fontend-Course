@@ -1,4 +1,7 @@
 # Devsnest-fontend TakeHomeAssigments
+<a href="https://bivas-biswas.github.io/Devsnest-fontend-Course/day-17/day17.html" target="_blank"><h1>Day-17: Calorie App React</h1></a>
+<img src="https://bivas-biswas.github.io/Devsnest-fontend-Course/screenshot/day17.png" alt="bivas-biswas"/>
+
 <a href="https://bivas-biswas.github.io/Devsnest-fontend-Course/day-16/day16.html" target="_blank"><h1>Day-16: Card and ChessBoard React</h1></a>
 <img src="https://bivas-biswas.github.io/Devsnest-fontend-Course/screenshot/day16.png" alt="bivas-biswas"/>
 
