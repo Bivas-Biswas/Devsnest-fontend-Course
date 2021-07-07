@@ -10,14 +10,16 @@ function App() {
   return (
     <>
     {/* chessBoard */}
+    <div className='left'>
     <h1 className="chess-header">ChessBoard</h1>
     <div className="board">
       
       <ChessBox/>
     </div>
+    </div>
 
     {/* caloriesBox */}
-
+    <div className="right">
     <Header />
       <div className="container">
         {data.map((item, id) => {
@@ -28,6 +30,7 @@ function App() {
             />
           );
         })}
+      </div>
       </div>
 
     </>
