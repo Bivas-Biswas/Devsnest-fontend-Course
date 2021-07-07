@@ -2,6 +2,7 @@ import '../styles/calorieBox.css'
 
 const calorieBox = ({props}) =>{
     const {name, calorie} = props
+
     return(
         <>
             <div className="calorieBox">
