@@ -1,0 +1,14 @@
+.board{
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1px;
+    border: 10px solid black;
+    border-radius: 3px;
+}
+
+.box{
+    width: 30px;
+    height: 30px;
+    background-color: blanchedalmond;
+}
