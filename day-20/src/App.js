@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header";
+import CalorieBox from "./components/calorieBox";
+import data from "./data/items";
+import { useState } from "react";
 
 function App() {
+
+  const [foods, setFood] = useState(data)
+  let newFoods = [...foods]
+  const handleDelete =(id) => {
+    newFoods = foods.filter(food => food!==foods[id])
+    setFood(newFoods)
+  }
+
+  const empty = () =>{
+    if(newFoods.length === 0){
+      return <h1>Empty Item</h1>
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Header />
+      <div className="container">
+        {newFoods.map((item, id) => {
+          return (
+            <CalorieBox
+              key={id}
+              id={id}
+              item={item}
+              handleDelete = {handleDelete}
+            />
+          );
+        })}
+        { empty() }
+        
+      </div>
     </div>
   );
 }

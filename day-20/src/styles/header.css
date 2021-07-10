@@ -1,0 +1,12 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #6ee29a;
+    width: 100%;
+    font-size: 1.4rem;
+    color: #154c24;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.36);
+
+}

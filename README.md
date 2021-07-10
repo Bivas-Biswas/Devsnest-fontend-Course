@@ -1,4 +1,7 @@
 # Devsnest-fontend TakeHomeAssigments
+<a href="https://bivas-biswas.github.io/Devsnest-fontend-Course/day-20/day20.html" target="_blank"><h1>Day-20: React Hooks</h1></a>
+<img src="https://bivas-biswas.github.io/Devsnest-fontend-Course/screenshot/day20.jpg" alt="bivas-biswas"/>
+
 <a href="https://bivas-biswas.github.io/Devsnest-fontend-Course/day-19/day19.html" target="_blank"><h1>Day-19: CounterApp using React</h1></a>
 <img src="https://bivas-biswas.github.io/Devsnest-fontend-Course/screenshot/day19.jpg" alt="bivas-biswas"/>
 

@@ -1,0 +1,45 @@
+h2{
+    font-size: 1.8rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+button{
+    float: right;
+    margin: 15px 0;
+    background: #fb5e5e;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    font-weight: bold;
+}
+
+button:hover{
+    opacity: 1;
+    transform: scale(1.09);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.05s ease-in-out;
+}
+
+.calorieBox{
+    background-color: rgba(111, 122, 229, 0.7);
+    width: 80%;
+    margin: 15px;
+    padding: 5px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    color: rgb(42, 42, 42);
+}
+
+.calorieBox:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    transition: 0.09s ease-in-out;
+}
