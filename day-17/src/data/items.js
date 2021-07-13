@@ -1,7 +1,7 @@
 const data = [
     {
         name: "Pizza",
-        calorie: 56
+        calorie: '56'
     },
     {
         name: 'Burger',
