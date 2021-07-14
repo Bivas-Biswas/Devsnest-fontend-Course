@@ -1,5 +1,5 @@
 import "../styles/calorieBox.css";
-import React, { useState } from "react";
+import React, { useState} from "react";
 
 const CalorieBox = ({ items, id, item, setItems }) => {
 
@@ -20,13 +20,12 @@ const CalorieBox = ({ items, id, item, setItems }) => {
   const handleOnDataChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    console.log(name, value);
     setEditData((current) => ({ ...current, [name]: value }));
-    // console.log(editData);
   };
 
   // for save data
   const handelOnSave = () => {
+    // make in new edit array object
     const curr = items.map((item, ind) => {
       if (ind === id) {
         return {
@@ -38,10 +37,11 @@ const CalorieBox = ({ items, id, item, setItems }) => {
         return item;
       }
     });
-    console.log(curr); 
+    
     setItems(curr)
     setIsInputActive(false)
   };
+
 
   return (
     <>

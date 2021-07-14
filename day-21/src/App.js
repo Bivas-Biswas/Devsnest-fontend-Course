@@ -16,7 +16,7 @@ function App() {
     },
   ]);
 
-  //
+  // for controlling the from input fields
   const [itemName, setItemName] = useState("");
   const [calorie, setCalorie] = useState("");
 
