@@ -29,7 +29,6 @@ const CalorieBox = ({ items, id, item, setItems }) => {
     const curr = items.map((item, ind) => {
       if (ind === id) {
         return {
-          ...item,
           name: editData.name,
           calorie: editData.calorie,
         };
