@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.App h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 2.5rem;
+  display: block;
+  margin: 10px;
+  background-color: rgb(231, 66, 121);
+  color: white;
+}
+
+.Templates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.template {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.template .image {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.template .image:hover{
+  transform: scale(1.01);
+  border: none;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.35);
+  transition: all 0.08s ease-out;
+}
+
+.meme {
+  text-align: center;
+  cursor: default;
+}
+
+.meme img {
+  width: auto;
+  height: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  
+}
+
+button{
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  margin: 5px;
+  border: none;
+  background-color: rgb(123, 123, 233);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  opacity: 0.8;
+}
+
+button:hover{
+  opacity: 1;
+  transform: scale(1.01);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.08s ease-in-out;
+}
+
+input{
+  padding: 5px;
+  margin: 5px;
+  font-size: 1.2rem;
+}
+.error_message{
+  color: rgb(245, 110, 110);
+  cursor: default;
+}
+
+button:nth-child(2){
+  background-color: rgb(50, 196, 201);
+}
+button:nth-child(3){
+  background-color: rgb(95, 231, 95);
+}
+
+.buttons{
+  margin-bottom: 30px;
+}
