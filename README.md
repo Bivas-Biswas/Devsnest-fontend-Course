@@ -1,6 +1,6 @@
 # Devsnest-fontend TakeHomeAssigments
 
-<a href="https://3vq2h.csb.app/" target="_blank">Day-26: From Handling using React-Redux</a>
+<a href="https://zwenf.csb.app/" target="_blank">Day-26: From Handling using React-Redux</a>
 
 <a href="https://3vq2h.csb.app/" target="_blank">Day-23/24: Login Page using React Router</a>
 
