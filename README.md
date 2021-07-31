@@ -1,5 +1,7 @@
 # Devsnest-fontend TakeHomeAssigments
 
+<a href="https://o8ut1.csb.app/" target="_blank">Day-28: Weather App using React-Hooks</a>
+
 <a href="https://b6p02.csb.app/" target="_blank">Day-27: Todo App using React-Redux</a>
 
 <a href="https://zwenf.csb.app/" target="_blank">Day-26: From Handling using React-Redux</a>
