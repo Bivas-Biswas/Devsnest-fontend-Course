@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    margin: 50px 0;
+}
+
+form button {
+    margin: 0 10px;
+    padding: 5px;
+    border: none;
+
+}
+
+form input {
+    padding: 5px;
+}
+
+.show_container {
+    border: 1px solid;
+    width: 350px;
+    padding: 15px;
+}
+
+.section-1 {
+    margin-bottom: 20px;
+}
+
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+img {
+    width: 40%;
+}
+
+.weather-conditon h1 {
+    font-size: 4rem;
+}
+
+.weather-conditon p {
+    font-size: 1.1rem;
+}
+
+.section-3 {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid;
+    padding: 10px 0;
+}
+
+.section-3 div {
+    width: 33.333%;
+    margin: 10px 0;
+}
+
+.section-3 p {
+
+}
+
+.no-search h1 {
+    text-align: center;
+}
