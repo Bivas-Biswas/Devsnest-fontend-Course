@@ -7,7 +7,8 @@ function WeatherApp() {
     const [show, setShow] = useState(true)
 
     const updatePlaceData = () => {
-        const url = `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=${place}`
+        // const url = `https://api.weatherapi.com/v1/forecast.json?key=${process.env.REACT_APP_WEATHER_API_KEY}&q=${place}`
+        const url = `https://api.weatherapi.com/v1/forecast.json?key=b06be5f7b87c4601a4f74846213107&q=${place}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
