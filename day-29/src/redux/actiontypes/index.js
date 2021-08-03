@@ -1,0 +1,2 @@
+export const UPDATE_PLACE = 'UPDATE_PLACE'
+export const UPDATE_PLACE_DATA = 'UPDATE_PLACE_DATA'
