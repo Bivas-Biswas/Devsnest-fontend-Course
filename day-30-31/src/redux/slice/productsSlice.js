@@ -20,7 +20,7 @@ const productsSlice = createSlice({
         [fetchAllProducts.fulfilled]: (state, action) => ({
             ...state,
             loading: false,
-            item: [...state.item, ...action.payload]
+            item: [...action.payload]
         })
     }
 })
