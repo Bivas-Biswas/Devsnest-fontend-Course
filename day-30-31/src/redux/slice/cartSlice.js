@@ -22,7 +22,6 @@ const cartSlice = createSlice({
                 return { ...state, items: newItems }
             } else {
                 return {
-                    ...state,
                     items: [...state.items, product]
                 }
             }
