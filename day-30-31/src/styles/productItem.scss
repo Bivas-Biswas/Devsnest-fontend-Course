@@ -1,0 +1,36 @@
+.item-wrapper {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 8px;
+  cursor: pointer;
+
+  img {
+    height: 200px;
+    object-fit: scale-down;
+  }
+
+  h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px 0;
+  }
+
+  h2{
+    margin: 5px 0;
+  }
+
+  .quantity-increase{
+    display: flex;
+    justify-content: space-evenly;
+
+    button{
+      padding: 0 10px;
+    }
+  }
+}
+
+
