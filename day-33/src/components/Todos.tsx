@@ -15,15 +15,18 @@ function Todos() {
         const newTodos = todos.filter((todo) => (
             todo !== todos[id]
         ))
+        setTodos(newTodos)
     }
 
     return (
         <div className="todos">
             <div className="input-field">
+
                 <input
                     type="text"
                     value={input}
                     onChange={(e) => setInput(e.target.value)}/>
+
                 <button
                     onClick={() => {
                         setTodos([{title: input, done: false, index: todos.length}, ...todos])
@@ -34,9 +37,11 @@ function Todos() {
                 </button>
             </div>
             {
-                todos.map((todo, index) => (
-                        <TodoList key={index} title={todo.title} done={todo.done} index={todo.index}/>
-                    )
+                todos.map((todo, index) => {
+                        todo.index = index
+                        return <TodoList key={index} title={todo.title} done={todo.done} index={todo.index}
+                                         handleDelete={handleDelete}/>
+                    }
                 )
             }
         </div>

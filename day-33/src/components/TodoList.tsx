@@ -3,13 +3,17 @@ import React from 'react';
 interface ITodoListProps {
     title: string,
     done: boolean,
-    index: number
+    index: number,
+    handleDelete: (id:number) => void
 }
 
-const MyComponent = ({title, done, index}: ITodoListProps) => {
+const MyComponent = ({title, done, index,handleDelete}: ITodoListProps) => {
 
     return (
-        <h2>{title}<button>Del</button></h2>
+        <div className='todos-items'>
+            <h2>{title}</h2>
+            <button onClick={()=> handleDelete(index)}>Del</button>
+        </div>
     );
 };
 

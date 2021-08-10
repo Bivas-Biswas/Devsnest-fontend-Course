@@ -1,4 +1,23 @@
-
 .todos {
   margin-top: 50px;
+
+  .input-field {
+    button {
+      margin: 0 5px;
+    }
+  }
+
+  .todos-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+
+    button {
+      cursor: pointer;
+    }
+  }
+}
+
+.todo-done{
+
 }
