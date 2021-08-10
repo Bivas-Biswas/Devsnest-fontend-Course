@@ -10,6 +10,12 @@ function Todos() {
     const [todos, setTodos] = useState<ITodoType[]>([])
     const [input, setInput] = useState<string>('')
 
+    const handleDelete = (id: number) => {
+        const newTodos = todos.filter((todo, index) => (
+            todo !== todos[id]
+        ))
+    }
+
     return (
         <div className="todos">
             <div className="input-field">
@@ -28,7 +34,7 @@ function Todos() {
             </div>
             {
                 todos.map((todo, index) => (
-                        <TodoList key={index} title={todo.title} done={todo.done} />
+                        <TodoList key={index} title={todo.title} done={todo.done}/>
                     )
                 )
             }
