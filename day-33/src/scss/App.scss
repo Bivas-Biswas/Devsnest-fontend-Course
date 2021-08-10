@@ -1,0 +1,11 @@
+.App{
+  min-height: 100vh;
+  background: antiquewhite;
+  display: flex;
+  justify-content: center;
+}
+
+.App.dark{
+  background: #262626;
+  color: #ffffff;
+}
