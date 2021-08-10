@@ -3,7 +3,7 @@ import React from 'react';
 interface ITodoListProps {
     title: string,
     done: boolean,
-    index: string
+    index: number
 }
 
 const MyComponent = ({title, done, index}: ITodoListProps) => {
