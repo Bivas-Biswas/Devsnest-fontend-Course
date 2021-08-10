@@ -12,7 +12,7 @@ function Todos() {
     const [input, setInput] = useState<string>('')
 
     const handleDelete = (id: number) => {
-        const newTodos = todos.filter((todo, index) => (
+        const newTodos = todos.filter((todo) => (
             todo !== todos[id]
         ))
     }
