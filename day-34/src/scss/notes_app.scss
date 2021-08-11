@@ -1,0 +1,25 @@
+.notes_app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .notes_add{
+    button{
+      margin-left: 10px;
+    }
+  }
+  .notes_list {
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h3 {
+      display: inline-block;
+    }
+  }
+
+
+}
+
+
