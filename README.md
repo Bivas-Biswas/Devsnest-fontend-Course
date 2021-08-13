@@ -1,4 +1,6 @@
 # Devsnest-fontend TakeHomeAssigments
+<a href="https://15y7s.csb.app/" target="_blank">Day-35: Instagram Clone using Typescript Redux</a>
+
 <a href="https://v0pqm.csb.app/" target="_blank">Day-34: Counter & NoteTaking App - React, Redux with TypeScript</a>
 
 <a href="https://cncso.csb.app/" target="_blank">Day-33: TodoList - React with TypeScript</a>
