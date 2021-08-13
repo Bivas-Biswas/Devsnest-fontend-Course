@@ -1,0 +1,28 @@
+.container{
+  width: 1000px;
+}
+.story {
+  padding: 10px;
+  display: block;
+  margin-top: 100px;
+  white-space: nowrap;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .story-img {
+    width: 55px;
+    border: 2px solid #c62f91;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 5px;
+
+    img {
+      width: 100%;
+      border: 2px solid white;
+      border-radius: 100%;
+    }
+  }
+}

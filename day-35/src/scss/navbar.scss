@@ -1,0 +1,33 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  .container {
+    max-width: 1000px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .nav-item i {
+    font-size: 1.5rem;
+    color: black;
+    padding: 0 5px;
+  }
+
+  .search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    input {
+      width: 200px;
+    }
+  }
+
+  .nav-item img {
+    width: 35px;
+  }
+}

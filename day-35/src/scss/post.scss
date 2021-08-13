@@ -1,0 +1,41 @@
+.post {
+  margin: 50px 0;
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+
+    .card-sub-header {
+      display: flex;
+    }
+
+    .card-img {
+      width: 30px;
+      height: 30px;
+      border: 2px solid #c62f91;
+      border-radius: 50%;
+    }
+
+    .card-tittle {
+      margin: 0 20px;
+    }
+
+    i {
+      float: right;
+    }
+  }
+
+  .buttons {
+    margin: 10px;
+    i {
+      cursor: pointer;
+      font-size: 1.3em;
+      margin: 10px;
+    }
+    .liked {
+      color: #ed4956;
+    }
+
+  }
+
+}
